@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://202.199.6.55:3306/honeypot</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.neu.diting.Entity.HoneypotEntity"/>
+      <mapping class="com.neu.diting.Entity.PotDataEntity"/>
+      <mapping class="com.neu.diting.Entity.PotData1201Entity"/>
+    <mapping class="com.neu.diting.Entity.ChangelogEntity"/>
+    <mapping class="com.neu.diting.Entity.WhoisEntity"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
